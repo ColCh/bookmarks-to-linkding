@@ -3,6 +3,7 @@ import re
 import requests
 import os
 import time
+import argparse
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -72,12 +73,21 @@ class LinkdingImporter:
             print(f"Failed imports saved to {failed_import_file}")
 
 if __name__ == "__main__":
-    # Path to the bookmarks JSON file
-    bookmarks_json_file = "bookmarks.json"
+    parser = argparse.ArgumentParser(description="Import bookmarks into Linkding.")
+    parser.add_argument("--file", required=True, help="Path to the bookmarks JSON file.")
+
+    args = parser.parse_args()
 
     # Read the input file
-    with open(bookmarks_json_file, "r", encoding="utf-8") as file:
-        bookmarks_json = json.load(file)
+    try:
+        with open(args.file, "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+    except FileNotFoundError:
+        print(f"Error: The file '{args.file}' does not exist.")
+        exit(1)
+    except json.JSONDecodeError:
+        print(f"Error: The file '{args.file}' is not a valid JSON file.")
+        exit(1)
 
     # Initialize LinkdingImporter
     importer = LinkdingImporter(

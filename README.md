@@ -56,6 +56,6 @@ export LINKDING_API_TOKEN="a65dd916d80e78113a4eddd4a58dae51f9c750d8"
 
 Step 4: Run the script
 
-    python main.py
+    python main.py --file bookmarks.json
 
 That's it. Failed import will be saved in `failed_import.json`, so review them after finish.
