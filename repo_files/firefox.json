@@ -1,0 +1,193 @@
+{
+    "guid": "root________",
+    "title": "",
+    "index": 0,
+    "dateAdded": 1736018482837000,
+    "lastModified": 1737713146244000,
+    "id": 1,
+    "typeCode": 2,
+    "type": "text/x-moz-place-container",
+    "root": "placesRoot",
+    "children": [
+        {
+            "guid": "menu________",
+            "title": "menu",
+            "index": 0,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1736018482936000,
+            "id": 2,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "bookmarksMenuFolder",
+            "children": [
+                {
+                    "guid": "-lrzmsEjSzIx",
+                    "title": "Mozilla Firefox",
+                    "index": 0,
+                    "dateAdded": 1736018482936000,
+                    "lastModified": 1736018482936000,
+                    "id": 7,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "ULawe-940Bxw",
+                            "title": "Get Help",
+                            "index": 0,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 8,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://support.mozilla.org/products/firefox",
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/products/firefox"
+                        },
+                        {
+                            "guid": "Gt1vKctt_PI3",
+                            "title": "Customise Firefox",
+                            "index": 1,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 9,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize",
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+                        },
+                        {
+                            "guid": "bvl21FhwtaUr",
+                            "title": "Get Involved",
+                            "index": 2,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 10,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://www.mozilla.org/contribute/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/contribute/"
+                        },
+                        {
+                            "guid": "Vt3dmC1wczEF",
+                            "title": "About Us",
+                            "index": 3,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 11,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://www.mozilla.org/about/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/about/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "guid": "toolbar_____",
+            "title": "toolbar",
+            "index": 1,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1737713146244000,
+            "id": 3,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "toolbarFolder",
+            "children": [
+                {
+                    "guid": "fIlArWsi3wd_",
+                    "title": "Repos",
+                    "index": 1,
+                    "dateAdded": 1737712966802000,
+                    "lastModified": 1737713146244000,
+                    "id": 13,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "1nZGdsbafJoE",
+                            "title": "user / Repositories — Bitbucket",
+                            "index": 0,
+                            "dateAdded": 1737712992217000,
+                            "lastModified": 1737712992217000,
+                            "id": 14,
+                            "typeCode": 1,
+                            "iconUri": "https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/f0a23e72c4cd/img/logos/bitbucket/android-chrome-192x192.png",
+                            "type": "text/x-moz-place",
+                            "uri": "https://bitbucket.org/user/workspace/repositories/"
+                        },
+                        {
+                            "guid": "RKf1S3VC4vM0",
+                            "title": "Github",
+                            "index": 1,
+                            "dateAdded": 1737713008694000,
+                            "lastModified": 1737713008694000,
+                            "id": 15,
+                            "typeCode": 1,
+                            "iconUri": "https://github.githubassets.com/favicons/favicon.svg",
+                            "type": "text/x-moz-place",
+                            "uri": "https://github.com/user?tab=repositories"
+                        },
+                        {
+                            "guid": "6nocRFdW4X-2",
+                            "title": "Gitlab",
+                            "index": 2,
+                            "dateAdded": 1737713063823000,
+                            "lastModified": 1737713063823000,
+                            "id": 16,
+                            "typeCode": 1,
+                            "iconUri": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png",
+                            "type": "text/x-moz-place",
+                            "uri": "https://gitlab.com/users/user/projects"
+                        }
+                    ]
+                },
+                {
+                    "guid": "aKvJtffF7FqW",
+                    "title": "Mail",
+                    "index": 2,
+                    "dateAdded": 1737713073155000,
+                    "lastModified": 1737713146244000,
+                    "id": 17,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "PO6LPmw42F4w",
+                            "title": "Google",
+                            "index": 0,
+                            "dateAdded": 1737713079232000,
+                            "lastModified": 1737713146244000,
+                            "id": 18,
+                            "typeCode": 1,
+                            "iconUri": "https://www.google.com/a/cpanel/mrnepal.com/images/favicon.ico",
+                            "type": "text/x-moz-place",
+                            "uri": "https://mail.google.com/mail/u/0/#inbox"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "guid": "unfiled_____",
+            "title": "unfiled",
+            "index": 3,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1736018482935000,
+            "id": 5,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "unfiledBookmarksFolder"
+        },
+        {
+            "guid": "mobile______",
+            "title": "mobile",
+            "index": 4,
+            "dateAdded": 1736018482844000,
+            "lastModified": 1736018482935000,
+            "id": 6,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "mobileFolder"
+        }
+    ]
+}
