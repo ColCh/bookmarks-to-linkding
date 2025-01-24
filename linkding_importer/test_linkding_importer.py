@@ -36,6 +36,31 @@ class TestLinkdingImporter(TestCase):
             bookmarks_json = json.load(file)
         result = self.importer.process_bookmarks(bookmarks_json, format="chrome")
         self.assertEqual(result, [])
+    
+    def test_process_invalid_chrome_bookmarks(self):
+        # Read the sample Firefox bookmarks file
+        with open("repo_files/firefox.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="chrome")
+
+        self.assertEqual(0, len(parsed_bookmarks))
+
+    @patch("linkding_importer.linkding_importer.LinkdingImporter.import_to_linkding")
+    def test_import_chrome_bookmarks(self, mock_import_to_linkding):
+        # Read the sample Chrome bookmarks file
+        with open("repo_files/chrome.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="chrome")
+        self.importer.import_to_linkding(parsed_bookmarks)
+
+        # Verify the number of calls to import_to_linkding
+        mock_import_to_linkding.assert_called_once()
+        self.assertEqual(len(parsed_bookmarks), mock_import_to_linkding.call_args[0][0].__len__())
+
 
     @patch("builtins.open", new_callable=mock_open, read_data='{"children": []}')
     def test_process_bookmarks_firefox(self, mock_file):
@@ -43,6 +68,32 @@ class TestLinkdingImporter(TestCase):
             bookmarks_json = json.load(file)
         result = self.importer.process_bookmarks(bookmarks_json, format="firefox")
         self.assertEqual(result, [])
+
+    def test_process_invalid_firefox_bookmarks(self):
+        # Read the sample Firefox bookmarks file
+        with open("repo_files/chrome.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="firefox")
+
+        self.assertEqual(0, len(parsed_bookmarks))
+
+    @patch("linkding_importer.linkding_importer.LinkdingImporter.import_to_linkding")
+    def test_import_firefox_bookmarks(self, mock_import_to_linkding):
+        # Read the sample Firefox bookmarks file
+        with open("repo_files/firefox.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="firefox")
+        self.importer.import_to_linkding(parsed_bookmarks)
+
+        # Verify the number of calls to import_to_linkding
+        mock_import_to_linkding.assert_called_once()
+        self.assertEqual(len(parsed_bookmarks), mock_import_to_linkding.call_args[0][0].__len__())
+
+
 
     def test_process_bookmarks_invalid_format(self):
         with self.assertRaises(ValueError):
