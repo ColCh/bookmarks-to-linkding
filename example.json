@@ -1,0 +1,247 @@
+{
+   "checksum": "c36bbd70457ec5175180c5fdc30cda2c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13156861316000000",
+                  "date_last_used": "0",
+                  "guid": "7e59ba40-fbb8-4a82-9d88-a103f95e12f0",
+                  "id": "4839",
+                  "name": "Trying out OAuth2 via CURL - Hybris Labs",
+                  "type": "url",
+                  "url": "https://labs.hybris.com/2012/06/18/trying-out-oauth2-via-curl/"
+               } ],
+               "date_added": "13381865906671648",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "a77f5747-3823-41c1-8177-3854df14c4e6",
+               "id": "4838",
+               "name": "OAuth2",
+               "type": "folder"
+            }, {
+               "date_added": "13198604668000000",
+               "date_last_used": "0",
+               "guid": "38c6b784-26dc-4074-bc74-ae76f5ec99de",
+               "id": "4852",
+               "name": "LinkedIn",
+               "type": "url",
+               "url": "https://www.linkedin.com/mynetwork/"
+            }, {
+               "date_added": "13141687666000000",
+               "date_last_used": "0",
+               "guid": "7242bdf2-341e-40d8-bc2e-b5c5be6ff6cc",
+               "id": "4855",
+               "name": "NASA just made all the scientific research it funds available for free - ScienceAlert",
+               "type": "url",
+               "url": "http://www.sciencealert.com/nasa-just-made-all-the-scientific-research-it-funds-available-for-free"
+            }, {
+               "date_added": "13141687717000000",
+               "date_last_used": "0",
+               "guid": "dcef43d1-2c4a-43c1-9978-c93d956760c8",
+               "id": "4857",
+               "name": "NUKEMAP by Alex Wellerstein",
+               "type": "url",
+               "url": "https://nuclearsecrecy.com/nukemap/"
+            }, {
+               "children": [ {
+                  "date_added": "13323522097000000",
+                  "date_last_used": "0",
+                  "guid": "ed7e317f-dda1-4f53-a668-1de446ef7ce8",
+                  "id": "4899",
+                  "name": "Home | Microsoft 365",
+                  "type": "url",
+                  "url": "https://www.office.com/?auth=2"
+               }, {
+                  "date_added": "13323522097000000",
+                  "date_last_used": "0",
+                  "guid": "b437949c-f787-4d04-a1ed-0cdf1c3b29df",
+                  "id": "4905",
+                  "name": "compose-dev-env/docker-compose.yaml at main · dockersamples/compose-dev-env",
+                  "type": "url",
+                  "url": "chrome-extension://fiabciakcmgepblmdkmemdbbkilneeeh/park.html?title=compose-dev-env%2Fdocker-compose.yaml%20at%20main%20%C2%B7%20dockersamples%2Fcompose-dev-env&url=https%3A%2F%2Fgithub.com%2Fdockersamples%2Fcompose-dev-env%2Fblob%2Fmain%2F.docker%2Fdocker-compose.yaml&tabId=78206433&sessionId=1674868364029&icon=https%3A%2F%2Fgithub.githubassets.com%2Ffavicons%2Ffavicon.svg"
+               }, {
+                  "date_added": "13323522097000000",
+                  "date_last_used": "0",
+                  "guid": "915729e2-06ed-48aa-9d08-0b3ed59e7e11",
+                  "id": "4907",
+                  "name": "localhost",
+                  "type": "url",
+                  "url": "chrome-extension://fiabciakcmgepblmdkmemdbbkilneeeh/park.html?title=localhost&url=http%3A%2F%2Flocalhost%3A3001%2F&tabId=78209642&sessionId=1676458475462"
+               }, {
+                  "date_added": "13323522097000000",
+                  "date_last_used": "0",
+                  "guid": "85d584d3-8e6d-476d-a9ff-8b15b3569b29",
+                  "id": "4908",
+                  "name": "Can't create dev environment with private GitHub repository · Issue #10 · docker/dev-environments",
+                  "type": "url",
+                  "url": "chrome-extension://fiabciakcmgepblmdkmemdbbkilneeeh/park.html?title=Can%27t%20create%20dev%20environment%20with%20private%20GitHub%20repository%20%C2%B7%20Issue%20%2310%20%C2%B7%20docker%2Fdev-environments&url=https%3A%2F%2Fgithub.com%2Fdocker%2Fdev-environments%2Fissues%2F10&tabId=78206477&sessionId=1674868364029&icon=https%3A%2F%2Fgithub.githubassets.com%2Ffavicons%2Ffavicon.svg"
+               } ],
+               "date_added": "13381865906673360",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "50218226-8244-4b5b-b70f-b75577e48c16",
+               "id": "4898",
+               "name": "2023-03-17",
+               "type": "folder"
+            }, {
+            "children": [ {
+               "children": [ {
+                  "children": [ {
+                     "children": [ {
+                        "children": [ {
+                           "date_added": "13153921853000000",
+                           "date_last_used": "0",
+                           "guid": "c10f6c30-b424-4e66-b22d-0a1cd4c6ae34",
+                           "id": "5095",
+                           "name": "GitHub",
+                           "type": "url",
+                           "url": "https://github.com/"
+                        }, {
+                           "date_added": "13153921853000000",
+                           "date_last_used": "0",
+                           "guid": "fd06c51c-0808-42c2-95ef-9c090a496cda",
+                           "id": "5096",
+                           "name": "Stack Overflow",
+                           "type": "url",
+                           "url": "http://stackoverflow.com/"
+                        } ],
+                        "date_added": "13381865906680035",
+                        "date_last_used": "0",
+                        "date_modified": "0",
+                        "guid": "0007231d-a1f5-40b1-9b21-e72301ccc699",
+                        "id": "5091",
+                        "name": "Home",
+                        "type": "folder"
+                     } ],
+                        "date_added": "13381865906680198",
+                        "date_last_used": "0",
+                        "date_modified": "0",
+                        "guid": "6492cf0b-2a65-44bf-8b19-1f87d76394e0",
+                        "id": "5098",
+                        "name": "LS",
+                        "type": "folder"
+                     } ],
+                     "date_added": "13381865906680017",
+                     "date_last_used": "0",
+                     "date_modified": "13381865906680017",
+                     "guid": "031fcce0-1ffe-4bd6-b7fd-192b6aea798e",
+                     "id": "5090",
+                     "name": "_startingPages",
+                     "type": "folder"
+                  } ],
+                  "date_added": "13381865906679997",
+                  "date_last_used": "0",
+                  "date_modified": "13381865906679997",
+                  "guid": "0b6934ad-766f-4cf5-a620-4012139bdec5",
+                  "id": "5089",
+                  "name": "Active List",
+                  "type": "folder"
+               }, {
+                  "children": [ {
+                     "children": [ {
+                        "date_added": "13152883689000000",
+                        "date_last_used": "0",
+                        "guid": "a55603a3-2d99-499d-9296-60c8884876d7",
+                        "id": "5859",
+                        "name": "mysql/Dockerfile at 0590e4efd2b31ec794383f084d419dea9bc752c4 · docker-library/mysql",
+                        "type": "url",
+                        "url": "https://github.com/docker-library/mysql/blob/0590e4efd2b31ec794383f084d419dea9bc752c4/5.7/Dockerfile#L62"
+                     }, {
+                        "date_added": "13152883689000000",
+                        "date_last_used": "0",
+                        "guid": "db8064a9-038f-4d74-b511-05f67760fd4f",
+                        "id": "5860",
+                        "name": "https://raw.githubusercontent.com/twitter/mysql/master/scripts/mysql_secure_installation.sh",
+                        "type": "url",
+                        "url": "https://raw.githubusercontent.com/twitter/mysql/master/scripts/mysql_secure_installation.sh"
+                     }, {
+                        "date_added": "13152883689000000",
+                        "date_last_used": "0",
+                        "guid": "7a75eaad-bddf-46fe-b51d-b898984f819a",
+                        "id": "5861",
+                        "name": "mysql-container/5.7/root/usr/share/container-scripts/mysql at master · sclorg/mysql-container",
+                        "type": "url",
+                        "url": "https://github.com/sclorg/mysql-container/tree/master/5.7/root/usr/share/container-scripts/mysql"
+                     }, {
+                        "date_added": "13152883689000000",
+                        "date_last_used": "0",
+                        "guid": "460f763b-b813-481a-862f-2fc94adc82ac",
+                        "id": "5862",
+                        "name": "mysql-container/Dockerfile at master · sclorg/mysql-container",
+                        "type": "url",
+                        "url": "https://github.com/sclorg/mysql-container/blob/master/5.7/Dockerfile#L49"
+                     }, {
+                        "date_added": "13152887348000000",
+                        "date_last_used": "0",
+                        "guid": "4abe5ecf-fb01-4a1e-a6b1-c7bf901773b8",
+                        "id": "5863",
+                        "name": "https://raw.githubusercontent.com/sclorg/mysql-container/master/5.7/Dockerfile",
+                        "type": "url",
+                        "url": "https://raw.githubusercontent.com/sclorg/mysql-container/master/5.7/Dockerfile"
+                     } ],
+                     "date_added": "13381865906702409",
+                     "date_last_used": "0",
+                     "date_modified": "0",
+                     "guid": "7acd4585-d570-4690-8fdf-1cca850e78b3",
+                     "id": "5858",
+                     "name": "Centos Mysql Docker container research",
+                     "type": "folder"
+                  } ],
+                  "date_added": "13381865906702389",
+                  "date_last_used": "0",
+                  "date_modified": "13381865906702389",
+                  "guid": "d72b5b05-750e-421e-bd9c-16c09cea21b5",
+                  "id": "5857",
+                  "name": "Archive List",
+                  "type": "folder"
+               } ],
+               "date_added": "13381865906679978",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "f8acb902-46e8-424d-8dce-15326480827a",
+               "id": "5088",
+               "name": "Personal",
+               "type": "folder"
+            } ],
+            "date_added": "13381865906679960",
+            "date_last_used": "0",
+            "date_modified": "13381865906679960",
+            "guid": "7635338d-f7fc-46f9-9574-dc6836c5335f",
+            "id": "5087",
+            "name": "Starx",
+            "type": "folder"
+         } ],
+         "date_added": "13380975807552206",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13380975807552208",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13380975807552208",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "xxx",
+   "version": 1
+}
