@@ -1,10 +1,12 @@
-# Booksmarks to Linkding
+# Bookmarks to Linkding
 
-This will allow you to import your bookmarks into the linkding platform. LindDing does not support folder structure, so this script will convert the folder structure to tags. 
+This will allow you to import your bookmarks into the linkding platform. 
+
+p.s As LindDing does not support folder structure, this script will convert the folder structure to tags so you can still group them together.
 
 ## How to use
 
-Step 1: Get your bookmarks in JSON format
+**Step 1:** Get your bookmarks in JSON format
 
 **Firefox**
 
@@ -12,7 +14,7 @@ Backup bookmarks from the Bookmarks manager. If unsure, see [this](https://suppo
 
 **Chrome**
 
-By default, Chrome stores your bookmarks as JSON, for example at:
+By default, Chrome stores your bookmarks as JSON, for example:
 
 For Windows users:
 
@@ -22,26 +24,24 @@ For Linux users:
 
     ~/.config/chrome/Default/Bookmarks
 
-(The location of this file will vary depending on your platform of course.)
-
 For Mac users:
 
     ~/Library/Application Support/Google/Chrome/Default/Bookmarks
 
-Then, save the file as `bookmarks.json`
+Then, copy the file to an easy location.
 
-Step 2: Clone the project folder, create a virtualenv, activate it and install the requirements.
+**Step 2:** Clone the project folder, create a virtualenv, activate it and install the requirements.
 
 ```bash
-git clone
+git clone https://github.com/starx/bookmarks-to-linkding.git
 python3 -m venv .venv
 source .venb/bin/activate
 pip install -r requirements.txt
 ```
 
-Step 2: Save the bookmarks file as `bookmarks.json` in the project folder.
+**Step 3:** Copy the bookmarks file to the project folder.
 
-Step 3: Add your linkding credentials
+**Step 4:** Add your linkding credentials
 
 Get your rest api key, from your settings page.
 
@@ -52,13 +52,13 @@ export LINKDING_API_URL="http://your-linkding-instance/api/bookmarks/"
 export LINKDING_API_TOKEN="your-api-token"
 ```
 
-Step 4: Run the script
+**Step 5:** Run the script
 
 For chrome:
 
     python main.py --file bookmarks.json --format chrome
 
-For chrome:
+For firefox:
 
     python main.py --file bookmarks.json --format firefox
 
