@@ -2,7 +2,7 @@
 
 This will allow you to import your bookmarks into the linkding platform. 
 
-p.s As LindDing does not support folder structure, this script will convert the folder structure to tags so you can still group them together.
+p.s As LinkDing does not support folder structure, this script will convert the folder structure to tags so you can still group them together.
 
 ## How to use
 
