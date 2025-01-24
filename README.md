@@ -1,6 +1,6 @@
 # Booksmarks to Linkding
 
-This will allow you to import your bookmarks into the linkding platform. LindDing does not support folder structure, so this script to convert the folder structure to tags. 
+This will allow you to import your bookmarks into the linkding platform. LindDing does not support folder structure, so this script will convert the folder structure to tags. 
 
 ## How to use
 
@@ -8,7 +8,7 @@ Step 1: Get your bookmarks in JSON format
 
 **Firefox**
 
-Click `Backup` in the Bookmarks manager
+Backup bookmarks from the Bookmarks manager. If unsure, see [this](https://support.mozilla.org/en-US/kb/restore-bookmarks-from-backup-or-move-them#w_manual-backup)
 
 **Chrome**
 
@@ -43,19 +43,23 @@ Step 2: Save the bookmarks file as `bookmarks.json` in the project folder.
 
 Step 3: Add your linkding credentials
 
+Get your rest api key, from your settings page.
+
+![linkding_rest_api_key](./repo_files/linkding_rest_api_key.jpeg)
 
 ```bash
 export LINKDING_API_URL="http://your-linkding-instance/api/bookmarks/"
 export LINKDING_API_TOKEN="your-api-token"
 ```
 
-```bash
-export LINKDING_API_URL="https://r1-h3y-bookmarks.mrnepal.com/api/bookmarks/"
-export LINKDING_API_TOKEN="a65dd916d80e78113a4eddd4a58dae51f9c750d8"
-```
-
 Step 4: Run the script
 
-    python main.py --file bookmarks.json
+For chrome:
+
+    python main.py --file bookmarks.json --format chrome
+
+For chrome:
+
+    python main.py --file bookmarks.json --format firefox
 
 That's it. Failed import will be saved in `failed_import.json`, so review them after finish.

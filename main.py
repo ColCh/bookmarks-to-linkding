@@ -22,7 +22,7 @@ class LinkdingImporter:
         folder_name = re.sub(r"[^a-z0-9-]", "", folder_name)  # Remove special characters
         return folder_name
 
-    def process_node(self, node, path=""):
+    def process_chrome_node(self, node, path=""):
         bookmarks = []
         current_path = f"{path}/{node['name']}" if path else node['name']
         if node.get("type") == "url":
@@ -33,14 +33,36 @@ class LinkdingImporter:
             })
         elif node.get("type") == "folder" and "children" in node:
             for child in node["children"]:
-                bookmarks.extend(self.process_node(child, current_path))
+                bookmarks.extend(self.process_chrome_node(child, current_path))
         return bookmarks
 
-    def process_bookmarks(self, bookmarks_json):
-        roots = bookmarks_json.get("roots", {})
-        all_bookmarks = []
-        for root in roots.values():
-            all_bookmarks.extend(self.process_node(root))
+    def process_firefox_node(self, node, path=""):
+        bookmarks = []
+        current_path = f"{path}/{node['title']}" if path else node['title']
+        if node.get("type") == "text/x-moz-place":  # URL
+            bookmarks.append({
+                "url": node["uri"],
+                "title": node["title"],
+                "tags": [self.normalize_folder_name(tag) for tag in current_path.split("/") if tag]
+            })
+        elif node.get("type") == "text/x-moz-place-container" and "children" in node:  # Folder
+            for child in node["children"]:
+                bookmarks.extend(self.process_firefox_node(child, current_path))
+        return bookmarks
+
+    def process_bookmarks(self, bookmarks_json, format="chrome"):
+        if format == "chrome":
+            roots = bookmarks_json.get("roots", {})
+            all_bookmarks = []
+            for root in roots.values():
+                all_bookmarks.extend(self.process_chrome_node(root))
+        elif format == "firefox":
+            roots = bookmarks_json.get("children", [])
+            all_bookmarks = []
+            for root in roots:
+                all_bookmarks.extend(self.process_firefox_node(root))
+        else:
+            raise ValueError("Unsupported format. Supported formats are 'chrome' and 'firefox'.")
         return all_bookmarks
 
     def import_to_linkding(self, bookmarks):
@@ -75,6 +97,7 @@ class LinkdingImporter:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Import bookmarks into Linkding.")
     parser.add_argument("--file", required=True, help="Path to the bookmarks JSON file.")
+    parser.add_argument("--format", required=True, choices=["chrome", "firefox"], help="Bookmarks format: 'chrome' or 'firefox'.")
 
     args = parser.parse_args()
 
@@ -96,7 +119,7 @@ if __name__ == "__main__":
     )
 
     # Process bookmarks
-    parsed_bookmarks = importer.process_bookmarks(bookmarks_json)
+    parsed_bookmarks = importer.process_bookmarks(bookmarks_json, format=args.format)
 
     # Import bookmarks
     importer.import_to_linkding(parsed_bookmarks)
