@@ -1,0 +1,193 @@
+{
+    "guid": "root________",
+    "title": "",
+    "index": 0,
+    "dateAdded": 1736018482837000,
+    "lastModified": 1740739444966000,
+    "id": 1,
+    "typeCode": 2,
+    "type": "text/x-moz-place-container",
+    "root": "placesRoot",
+    "children": [
+        {
+            "guid": "menu________",
+            "title": "menu",
+            "index": 0,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1736018482936000,
+            "id": 2,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "bookmarksMenuFolder",
+            "children": [
+                {
+                    "guid": "-lrzmsEjSzIx",
+                    "title": "Mozilla Firefox",
+                    "index": 0,
+                    "dateAdded": 1736018482936000,
+                    "lastModified": 1736018482936000,
+                    "id": 7,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "ULawe-940Bxw",
+                            "title": "Get Help",
+                            "index": 0,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 8,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://support.mozilla.org/products/firefox",
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/products/firefox"
+                        },
+                        {
+                            "guid": "Gt1vKctt_PI3",
+                            "title": "Customise Firefox",
+                            "index": 1,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 9,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize",
+                            "type": "text/x-moz-place",
+                            "uri": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+                        },
+                        {
+                            "guid": "bvl21FhwtaUr",
+                            "title": "Get Involved",
+                            "index": 2,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 10,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://www.mozilla.org/contribute/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/contribute/"
+                        },
+                        {
+                            "guid": "Vt3dmC1wczEF",
+                            "title": "About Us",
+                            "index": 3,
+                            "dateAdded": 1736018482936000,
+                            "lastModified": 1736018482936000,
+                            "id": 11,
+                            "typeCode": 1,
+                            "iconUri": "fake-favicon-uri:https://www.mozilla.org/about/",
+                            "type": "text/x-moz-place",
+                            "uri": "https://www.mozilla.org/about/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "guid": "toolbar_____",
+            "title": "toolbar",
+            "index": 1,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1740739444966000,
+            "id": 3,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "toolbarFolder",
+            "children": [
+                {
+                    "guid": "RNAsz5bu65Ex",
+                    "title": "Starx",
+                    "index": 2,
+                    "dateAdded": 1740739329184000,
+                    "lastModified": 1740739444966000,
+                    "id": 20,
+                    "typeCode": 2,
+                    "type": "text/x-moz-place-container",
+                    "children": [
+                        {
+                            "guid": "2LlPB7huWpvE",
+                            "title": "Personal",
+                            "index": 0,
+                            "dateAdded": 1740739340712000,
+                            "lastModified": 1740739444966000,
+                            "id": 21,
+                            "typeCode": 2,
+                            "type": "text/x-moz-place-container",
+                            "children": [
+                                {
+                                    "guid": "N55ObY5ra0h4",
+                                    "title": "Active list",
+                                    "index": 0,
+                                    "dateAdded": 1740739352664000,
+                                    "lastModified": 1740739444966000,
+                                    "id": 22,
+                                    "typeCode": 2,
+                                    "type": "text/x-moz-place-container",
+                                    "children": [
+                                        {
+                                            "guid": "7onZF8dAOFBO",
+                                            "title": "_startingPages",
+                                            "index": 0,
+                                            "dateAdded": 1740739367190000,
+                                            "lastModified": 1740739444966000,
+                                            "id": 23,
+                                            "typeCode": 2,
+                                            "type": "text/x-moz-place-container",
+                                            "children": [
+                                                {
+                                                    "guid": "VE0T3unpfrxj",
+                                                    "title": "Home",
+                                                    "index": 0,
+                                                    "dateAdded": 1740739405071000,
+                                                    "lastModified": 1740739444966000,
+                                                    "id": 24,
+                                                    "typeCode": 2,
+                                                    "type": "text/x-moz-place-container",
+                                                    "children": [
+                                                        {
+                                                            "guid": "VoXhYO3kPUpb",
+                                                            "title": "GitHub",
+                                                            "index": 0,
+                                                            "dateAdded": 1740739426170000,
+                                                            "lastModified": 1740739444966000,
+                                                            "id": 25,
+                                                            "typeCode": 1,
+                                                            "iconUri": "https://github.githubassets.com/favicons/favicon.svg",
+                                                            "type": "text/x-moz-place",
+                                                            "uri": "https://github.com/"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "guid": "unfiled_____",
+            "title": "unfiled",
+            "index": 3,
+            "dateAdded": 1736018482837000,
+            "lastModified": 1736018482935000,
+            "id": 5,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "unfiledBookmarksFolder"
+        },
+        {
+            "guid": "mobile______",
+            "title": "mobile",
+            "index": 4,
+            "dateAdded": 1736018482844000,
+            "lastModified": 1736018482935000,
+            "id": 6,
+            "typeCode": 2,
+            "type": "text/x-moz-place-container",
+            "root": "mobileFolder"
+        }
+    ]
+}

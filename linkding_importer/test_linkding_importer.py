@@ -93,8 +93,28 @@ class TestLinkdingImporter(TestCase):
         mock_import_to_linkding.assert_called_once()
         self.assertEqual(len(parsed_bookmarks), mock_import_to_linkding.call_args[0][0].__len__())
 
-
-
     def test_process_bookmarks_invalid_format(self):
         with self.assertRaises(ValueError):
             self.importer.process_bookmarks({}, format="invalid")
+
+    def test_correct_tag_during_chrome_import(self):
+        with open("repo_files/chrome_children.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="chrome") # my breakpoint
+        sut_bookmark = parsed_bookmarks.pop()
+        expected_tags = ['bookmarks-bar', 'starx', 'personal', 'active-list', 'startingpages', 'home']
+        assert set(expected_tags) == set(sut_bookmark['tags'])
+
+
+    def test_correct_tag_during_firefox_import(self):
+        with open("repo_files/firefox_children.json", "r", encoding="utf-8") as file:
+            bookmarks_json = json.load(file)
+        
+        # Process bookmarks and mock the import
+        parsed_bookmarks = self.importer.process_bookmarks(bookmarks_json, format="firefox") # my breakpoint
+        sut_bookmark = parsed_bookmarks.pop()
+        expected_tags = ['toolbar', 'starx', 'personal', 'active-list', 'startingpages', 'home']
+        assert set(expected_tags) == set(sut_bookmark['tags'])
+        

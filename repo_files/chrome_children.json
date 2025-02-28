@@ -1,0 +1,80 @@
+{
+   "checksum": "c36bbd70457ec5175180c5fdc30cda2c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "children": [ {
+                     "children": [ {
+                        "children": [ {
+                           "date_added": "13153921853000000",
+                           "date_last_used": "0",
+                           "guid": "c10f6c30-b424-4e66-b22d-0a1cd4c6ae34",
+                           "id": "5095",
+                           "name": "GitHub",
+                           "type": "url",
+                           "url": "https://github.com/"
+                        } ],
+                        "date_added": "13381865906680035",
+                        "date_last_used": "0",
+                        "date_modified": "0",
+                        "guid": "0007231d-a1f5-40b1-9b21-e72301ccc699",
+                        "id": "5091",
+                        "name": "Home",
+                        "type": "folder"
+                     } ],
+                     "date_added": "13381865906680017",
+                     "date_last_used": "0",
+                     "date_modified": "13381865906680017",
+                     "guid": "031fcce0-1ffe-4bd6-b7fd-192b6aea798e",
+                     "id": "5090",
+                     "name": "_startingPages",
+                     "type": "folder"
+                  } ],
+                  "date_added": "13381865906679997",
+                  "date_last_used": "0",
+                  "date_modified": "13381865906679997",
+                  "guid": "0b6934ad-766f-4cf5-a620-4012139bdec5",
+                  "id": "5089",
+                  "name": "Active List",
+                  "type": "folder"
+               } ],
+               "date_added": "13381865906679978",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "f8acb902-46e8-424d-8dce-15326480827a",
+               "id": "5088",
+               "name": "Personal",
+               "type": "folder"
+            } ],
+            "date_added": "13381865906679960",
+            "date_last_used": "0",
+            "date_modified": "13381865906679960",
+            "guid": "7635338d-f7fc-46f9-9574-dc6836c5335f",
+            "id": "5087",
+            "name": "Starx",
+            "type": "folder"
+         } ],
+         "date_added": "13380975807552206",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13380975807552208",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "xxx",
+   "version": 1
+}
