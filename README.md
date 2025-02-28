@@ -35,13 +35,13 @@ Then, copy the file to an easy location.
 ```bash
 git clone https://github.com/starx/bookmarks-to-linkding.git
 python3 -m venv .venv
-source .venb/bin/activate
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 **Step 3:** Copy the bookmarks file to the project folder.
 
-**Step 4:** Add your linkding credentials
+**Step 4:** Add your linkding credentials 
 
 Get your rest api key, from your settings page.
 

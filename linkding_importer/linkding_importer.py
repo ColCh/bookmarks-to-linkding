@@ -23,7 +23,7 @@ class LinkdingImporter:
             bookmarks.append({
                 "url": node["url"],
                 "title": node["name"],
-                "tags": [self.normalize_folder_name(tag) for tag in current_path.split("/") if tag]
+                "tags": [self.normalize_folder_name(tag) for tag in path.split("/") if tag]
             })
         elif node.get("type") == "folder" and "children" in node:
             for child in node["children"]:
@@ -37,7 +37,7 @@ class LinkdingImporter:
             bookmarks.append({
                 "url": node["uri"],
                 "title": node["title"],
-                "tags": [self.normalize_folder_name(tag) for tag in current_path.split("/") if tag]
+                "tags": [self.normalize_folder_name(tag) for tag in path.split("/") if tag]
             })
         elif node.get("type") == "text/x-moz-place-container" and "children" in node:  # Folder
             for child in node["children"]:
