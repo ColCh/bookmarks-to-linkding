@@ -2,11 +2,13 @@ import json
 import re
 import requests
 import time
+import openai
 
 class LinkdingImporter:
-    def __init__(self, api_url, api_token):
+    def __init__(self, api_url, api_token, openai_token):
         self.api_url = api_url
         self.api_token = api_token
+        self.openai_token = openai_token
         self.failed_bookmarks = []
 
     @staticmethod
@@ -43,6 +45,8 @@ class LinkdingImporter:
             for child in node["children"]:
                 bookmarks.extend(self.process_firefox_node(child, current_path))
         return bookmarks
+        # DEBUG: return first
+        # return bookmarks[0:1]
 
     def process_bookmarks(self, bookmarks_json, format="chrome"):
         if format == "chrome":
@@ -87,3 +91,43 @@ class LinkdingImporter:
             with open(failed_import_file, "w", encoding="utf-8") as file:
                 json.dump(self.failed_bookmarks, file, indent=2)
             print(f"Failed imports saved to {failed_import_file}")
+
+    def add_openai_tags(self, bookmarks):
+        openai.api_key = self.openai_token
+        bookmarks_with_openai_tags = []
+        for bookmark in bookmarks:
+            print(f"process: {bookmark["title"]} START")
+            # Format the list of existing tags as a comma-separated string
+            existing_tags_str = ", ".join(bookmark["tags"])
+
+            print(f"Already existing tags: {existing_tags_str}")
+
+            # Define the prompt for the OpenAI model.
+            # This prompt informs the model of its role and provides the necessary context.
+            prompt = (
+                f"You are an assistant that helps categorize bookmarks by suggesting relevant tags.\n"
+                f"Bookmark Title: \"{bookmark["title"]}\"\n"
+                f"Bookmark URL: \"{bookmark["url"]}\"\n"
+                f"Already suggested tags: {existing_tags_str}\n\n"
+                f"Please suggest additional tags that accurately describe the content of this bookmark. "
+                f"Return a comma-separated list of tags. BUT NO MORE THAN 3 TAGS."
+            )
+            client = openai.OpenAI()
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                store=True,
+                messages=[
+                    {"role": "system", "content": prompt}
+                ]
+            )
+            # Print the raw response message content.
+            print(f"OpenAI response for bookmark '{bookmark['title']}': {response.choices[0].message.content}")
+
+            # Extract tags from the response by splitting lines and trimming whitespace.
+            tags = [tag.strip() for tag in response.choices[0].message.content.split(",") if tag.strip()]
+
+            # Add the OpenAI suggested tags to the bookmark.
+            bookmark["tags"].extend(tags)
+            bookmarks_with_openai_tags.append(bookmark)
+            print(f"process: {bookmark["title"]} DONE")
+        return bookmarks_with_openai_tags

@@ -1,8 +1,10 @@
 # Bookmarks to Linkding
 
-This will allow you to import your bookmarks into the linkding platform. 
+This will allow you to import your bookmarks into the linkding platform.
 
 p.s As LinkDing does not support folder structure, this script will convert the folder structure to tags so you can still group them together.
+
+This will also ask ChatGPT to add more tags for each link, so you can search them easily.
 
 ## How to use
 
@@ -41,7 +43,7 @@ pip install -r requirements.txt
 
 **Step 3:** Copy the bookmarks file to the project folder.
 
-**Step 4:** Add your linkding credentials 
+**Step 4:** Add your linkding credentials
 
 Get your rest api key, from your settings page.
 
@@ -50,6 +52,7 @@ Get your rest api key, from your settings page.
 ```bash
 export LINKDING_API_URL="http://your-linkding-instance/api/bookmarks/"
 export LINKDING_API_TOKEN="your-api-token"
+export OPENAI_API_KEY="your-openai-api-token"
 ```
 
 **Step 5:** Run the script

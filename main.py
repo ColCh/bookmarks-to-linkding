@@ -28,14 +28,21 @@ if __name__ == "__main__":
     # Initialize LinkdingImporter
     importer = LinkdingImporter(
         api_url=os.getenv("LINKDING_API_URL", "http://your-linkding-instance/api/bookmarks/"),
-        api_token=os.getenv("LINKDING_API_TOKEN", "your-api-token")
+        api_token=os.getenv("LINKDING_API_TOKEN", "your-api-token"),
+        openai_token=os.getenv("OPENAI_API_KEY", "your-openai-token"),
     )
 
     # Process bookmarks
     parsed_bookmarks = importer.process_bookmarks(bookmarks_json, format=args.format)
 
+    bookmarks_with_openai_tags = importer.add_openai_tags(parsed_bookmarks)
+
+    # save the bookmarks with openai tags into json file
+    with open("bookmarks_with_openai_tags.json", "w", encoding="utf-8") as file:
+        json.dump(bookmarks_with_openai_tags, file, indent=2)
+
     # Import bookmarks
-    importer.import_to_linkding(parsed_bookmarks)
+    importer.import_to_linkding(bookmarks_with_openai_tags)
 
     # Save failed imports
     importer.save_failed_bookmarks()
